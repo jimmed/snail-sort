@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "author": "Jim O'Brien <jim@jimmed.net>",
   "license": "WTFPL",
-  "main": "snailSort.js",
-  "esnext": "snailSort.flow.js",
+  "main": "dist/snailSort.js",
+  "esnext": "src/snailSort.js",
   "scripts": {
     "test": "jest",
     "flow": "flow",
-    "build": "babel snailSort.flow.js -o snailSort.js",
-    "prepublish": "run-s build"
+    "build": "babel src/ -d dist/",
+    "prepublish": "run-s build",
+    "postinstall": "flow-typed update"
   },
   "devDependencies": {
     "@babel/cli": "^7.2.0",
@@ -18,6 +19,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "flow-bin": "^0.88.0",
+    "flow-typed": "^2.5.1",
     "jest": "^23.6.0",
     "lodash": "^4.17.11",
     "npm-run-all": "^4.1.5"
