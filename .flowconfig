@@ -1,9 +1,11 @@
 [ignore]
 
 [include]
-snailSort.flow.js
+src
+test
 
 [libs]
+flow-typed
 
 [lints]
 
