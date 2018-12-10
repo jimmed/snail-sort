@@ -1,0 +1,12 @@
+[ignore]
+
+[include]
+snailSort.flow.js
+
+[libs]
+
+[lints]
+
+[options]
+
+[strict]
